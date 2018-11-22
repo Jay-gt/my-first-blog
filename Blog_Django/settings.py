@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'Blog_Django.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'zhongjj123$default',
+        'NAME': 'zhongjj123$django_blog',
         'USER':'zhongjj123',
         'PASSWORD': 'wycnm123',
         'HOST': 'zhongjj123.mysql.pythonanywhere-servives.com',
