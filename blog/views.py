@@ -1,4 +1,4 @@
-from datetime import timezone
+from django.utils import timezone
 from django.http import HttpResponse
 from django.shortcuts import render
 from . import models
