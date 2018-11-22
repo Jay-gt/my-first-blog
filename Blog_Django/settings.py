@@ -81,7 +81,7 @@ DATABASES = {
         'NAME': 'zhongjj123$django_blog',
         'USER':'zhongjj123',
         'PASSWORD': 'wycnm123',
-        'HOST': 'zhongjj123.mysql.pythonanywhere-servives.com',
+        'HOST': 'zhongjj123.mysql.pythonanywhere-services.com',
     }
 }
 
