@@ -1,7 +1,7 @@
 from django.utils import timezone
 from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404
-from . import models
+from . import models, forms
 
 def post_list(request):
     posts = models.Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
@@ -12,4 +12,10 @@ def post_detail(request, pk):
     post = get_object_or_404(models.Post, pk=pk)
     return render(request, 'blog/post_detail.html', {'post': post})
     # return HttpResponse('post:'+pk)
+
+
+def post_new(request):
+    form = forms.PostForm()
+    return render(request, 'blog/post_edit.html', {'form': form})
+
 
